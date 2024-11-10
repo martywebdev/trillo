@@ -32,9 +32,6 @@
 .hotel-view {
   flex: 1;
   background-color: #fff;
-
-  
-  height: 80rem;
 }
 
 .detail {
@@ -44,7 +41,10 @@
   border-bottom: var(--line);
 }
 .description {
-  background-color: orangered;
+  font-size: 1.4rem;
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
 }
