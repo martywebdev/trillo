@@ -187,3 +187,16 @@
     display: block;
   }
 }
+
+// Hotel overview
+
+.overview {
+  &__heading{}
+  &__stars{}
+  &__icon-star,
+  &__icon-location{}
+  &__location{}
+  &__rating {}
+  &__rating-average{}
+  &__rating-count{}
+}
