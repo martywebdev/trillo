@@ -191,12 +191,31 @@
 // Hotel overview
 
 .overview {
-  &__heading{}
-  &__stars{}
+  display: flex;
+  &__heading {
+  }
+  &__stars {
+    border: 1px solid red;
+
+    // use this instead of flex:1 
+    // this will use available space 
+    margin-right: auto;
+  }
+
   &__icon-star,
-  &__icon-location{}
-  &__location{}
-  &__rating {}
-  &__rating-average{}
-  &__rating-count{}
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
+   
+  }
+  &__rating {
+  }
+  &__rating-average {
+  }
+  &__rating-count {
+  }
 }
