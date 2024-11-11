@@ -1,3 +1,5 @@
+@use './base' as *;
+
 .logo {
   height: 3.25rem;
   margin-left: 2rem;
@@ -117,11 +119,21 @@
   list-style: none;
   margin-top: 3.5rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    display: flex;
+    margin: 0;
+  }
+
   &__item {
     position: relative;
 
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1;
+      margin-bottom: 0;
     }
   }
 
@@ -160,6 +172,11 @@
     z-index: 10;
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+      padding: 2rem;
+    }
   }
 
   &__icon {
@@ -176,6 +193,10 @@
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }
 
 // Gallery
@@ -339,7 +360,6 @@
 }
 
 // recommend
-
 .recommend {
   font-size: 1.3rem;
   color: var(--color-grey-dark-3);
@@ -350,6 +370,11 @@
   &__count {
     margin-right: auto;
   }
+
+  &__friends {
+    display: flex;
+  }
+
   &__photo {
     box-sizing: content-box;
     height: 4rem;
@@ -357,7 +382,7 @@
     border-radius: 50%;
     border: 3px solid #fff;
     &:not(:last-child) {
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
   }
 }
@@ -369,7 +394,10 @@
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden;
-
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
   &__text {
     margin-bottom: 2rem;
     z-index: 10;
@@ -418,10 +446,13 @@
 }
 
 // call to action
-
 .cta {
   padding: 3.5rem 0;
   text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2.5rem 0;
+  }
 
   &__book-now {
     font-size: 1.5rem;
